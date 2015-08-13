@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMaps
+//if I import something here will it be present everywhere or no?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

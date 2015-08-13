@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewMap: UIView!
+    
+    @IBOutlet weak var bbFindAddress: UIBarButtonItem!
+    
+    @IBOutlet weak var lblInfo: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +28,27 @@ class ViewController: UIViewController {
     }
 
 
+    // MARK: IBAction method implementation
+    
+    @IBAction func changeMapType(sender: AnyObject) {
+        
+    }
+    
+    
+    @IBAction func findAddress(sender: AnyObject) {
+    
+    }
+    
+    
+    @IBAction func createRoute(sender: AnyObject) {
+    
+    }
+    
+    
+    @IBAction func changeTravelMode(sender: AnyObject) {
+    
+    }
+    
+    
 }
 
