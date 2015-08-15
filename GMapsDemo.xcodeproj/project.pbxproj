@@ -20,6 +20,7 @@
 		73913E2A1B7C1EFA002CC2CE /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73913E271B7C1EFA002CC2CE /* libc++.dylib */; };
 		73913E2B1B7C1EFA002CC2CE /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73913E281B7C1EFA002CC2CE /* libicucore.dylib */; };
 		73913E2C1B7C1EFA002CC2CE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73913E291B7C1EFA002CC2CE /* libz.dylib */; };
+		73913E311B7C29B9002CC2CE /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73913E301B7C29B9002CC2CE /* MapTasks.swift */; };
 		C06682591AC7D5A10064A6C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06682581AC7D5A10064A6C0 /* AppDelegate.swift */; };
 		C066825B1AC7D5A10064A6C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066825A1AC7D5A10064A6C0 /* ViewController.swift */; };
 		C066825E1AC7D5A10064A6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C066825C1AC7D5A10064A6C0 /* Main.storyboard */; };
@@ -55,6 +56,8 @@
 		73913E271B7C1EFA002CC2CE /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		73913E281B7C1EFA002CC2CE /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		73913E291B7C1EFA002CC2CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		73913E2D1B7C202C002CC2CE /* GMapsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMapsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		73913E301B7C29B9002CC2CE /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		7F9A98BE956A7179C60138D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06682531AC7D5A10064A6C0 /* GMapsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMapsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06682571AC7D5A10064A6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 				C06682541AC7D5A10064A6C0 /* Products */,
 				6FC1ADFBACD52C32FB624D51 /* Pods */,
 				DDE36E5D0616652070585A35 /* Frameworks */,
+				73913E2D1B7C202C002CC2CE /* GMapsDemo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,7 @@
 			children = (
 				C06682581AC7D5A10064A6C0 /* AppDelegate.swift */,
 				C066825A1AC7D5A10064A6C0 /* ViewController.swift */,
+				73913E301B7C29B9002CC2CE /* MapTasks.swift */,
 				C066825C1AC7D5A10064A6C0 /* Main.storyboard */,
 				C066825F1AC7D5A10064A6C0 /* Images.xcassets */,
 				C06682611AC7D5A10064A6C0 /* LaunchScreen.xib */,
@@ -325,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73913E311B7C29B9002CC2CE /* MapTasks.swift in Sources */,
 				C066825B1AC7D5A10064A6C0 /* ViewController.swift in Sources */,
 				C06682591AC7D5A10064A6C0 /* AppDelegate.swift in Sources */,
 			);
@@ -450,6 +456,7 @@
 			baseConfigurationReference = 53EF535E8A99A36D2DFCAB48 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
@@ -497,6 +504,8 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMapsDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -505,6 +514,7 @@
 			baseConfigurationReference = FB99BEF005FA32EFE8693D9A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
@@ -552,6 +562,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMapsDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
