@@ -58,6 +58,23 @@
 		73913E291B7C1EFA002CC2CE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		73913E2D1B7C202C002CC2CE /* GMapsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMapsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		73913E301B7C29B9002CC2CE /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
+		73EC0C1B1B890D0000026A4C /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		73EC0C1C1B890D0000026A4C /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		73EC0C1D1B890D0000026A4C /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C1E1B890D0000026A4C /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		73EC0C1F1B890D0000026A4C /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C201B890D0000026A4C /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		73EC0C211B890D0000026A4C /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C221B890D0000026A4C /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		73EC0C231B890D0000026A4C /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C241B890D0000026A4C /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		73EC0C251B890D0000026A4C /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C261B890D0000026A4C /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C271B890D0000026A4C /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		73EC0C281B890D0000026A4C /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C291B890D0000026A4C /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		73EC0C2A1B890D0000026A4C /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		73EC0C2B1B890D0000026A4C /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		7F9A98BE956A7179C60138D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06682531AC7D5A10064A6C0 /* GMapsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMapsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06682571AC7D5A10064A6C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +128,31 @@
 				FB99BEF005FA32EFE8693D9A /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		73EC0C1A1B890D0000026A4C /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				73EC0C1B1B890D0000026A4C /* AFNetworkActivityIndicatorManager.h */,
+				73EC0C1C1B890D0000026A4C /* AFNetworkActivityIndicatorManager.m */,
+				73EC0C1D1B890D0000026A4C /* UIActivityIndicatorView+AFNetworking.h */,
+				73EC0C1E1B890D0000026A4C /* UIActivityIndicatorView+AFNetworking.m */,
+				73EC0C1F1B890D0000026A4C /* UIAlertView+AFNetworking.h */,
+				73EC0C201B890D0000026A4C /* UIAlertView+AFNetworking.m */,
+				73EC0C211B890D0000026A4C /* UIButton+AFNetworking.h */,
+				73EC0C221B890D0000026A4C /* UIButton+AFNetworking.m */,
+				73EC0C231B890D0000026A4C /* UIImageView+AFNetworking.h */,
+				73EC0C241B890D0000026A4C /* UIImageView+AFNetworking.m */,
+				73EC0C251B890D0000026A4C /* UIKit+AFNetworking.h */,
+				73EC0C261B890D0000026A4C /* UIProgressView+AFNetworking.h */,
+				73EC0C271B890D0000026A4C /* UIProgressView+AFNetworking.m */,
+				73EC0C281B890D0000026A4C /* UIRefreshControl+AFNetworking.h */,
+				73EC0C291B890D0000026A4C /* UIRefreshControl+AFNetworking.m */,
+				73EC0C2A1B890D0000026A4C /* UIWebView+AFNetworking.h */,
+				73EC0C2B1B890D0000026A4C /* UIWebView+AFNetworking.m */,
+			);
+			name = "UIKit+AFNetworking";
+			path = "Pods/AFNetworking/UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
 		C066824A1AC7D5A10064A6C0 = {
@@ -176,6 +218,7 @@
 		DDE36E5D0616652070585A35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73EC0C1A1B890D0000026A4C /* UIKit+AFNetworking */,
 				73913E271B7C1EFA002CC2CE /* libc++.dylib */,
 				73913E281B7C1EFA002CC2CE /* libicucore.dylib */,
 				73913E291B7C1EFA002CC2CE /* libz.dylib */,

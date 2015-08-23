@@ -137,10 +137,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     var params = [
                         
                         "current_city": "new york",
-                        "location": [
+                        //"location": [
                             "long": self.mapTasks.fetchedAddressLongitude,
-                            "lat": self.mapTasks.fetchedAddressLatitude
-                        ],
+                            "lat": self.mapTasks.fetchedAddressLatitude,
+                        //],
                         "closest_people": [
                             "Mary": 5,
                             "Ellen": 100,
@@ -148,21 +148,42 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         ],
                         //preferences
                         "gender": "M",
-                        "ethnicity": "asian",
-                        "prefer_ethnicity": "asian",
-                        "major": "ee",
+                        "ethnicity": "AZN",
+                        "prefer_ethnicity": "AZN",
+                        "major": "anthropology",
                         "school": "ucla"
                         
                     ]
                     
-                    self.manager.POST("http://localhost:3000/app_users",
-                        parameters: params,
-                        success: { (AFHTTPRequestOperation, AnyObject) -> Void in
-                            println("success!")
-                        }) { (AFHTTPRequestOperation, NSError) -> Void in
-                            println("fail")
-                    }
                     
+                    //GET the user A's stuff
+                    self.manager.GET( "http://localhost:3000/app_users/55ce940a67a6ce3908771ca1",
+                        parameters: nil,
+                        success: { (operation: AFHTTPRequestOperation!,responseObject: AnyObject!) in
+                            println(responseObject)
+                            if let params = responseObject as? NSDictionary {
+                                
+                                //save user A's stuff into user B
+                                self.manager.PUT("http://localhost:3000/app_users/55d8d915fa295e7aa7a22e98",
+                                    parameters: params,
+                                    success: { (AFHTTPRequestOperation, AnyObject) -> Void in
+                                        println("success!")
+                                    }) { (AFHTTPRequestOperation, NSError) -> Void in
+                                        println("poop")
+                                }
+                            
+                            }
+                            //params = responseObject
+                            println("SUCESS")
+                        },
+                        failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+                            println("Error: " + error.localizedDescription)
+                    })
+                    //completion blocks
+                    
+
+
+
                     
 
                     
